@@ -1,8 +1,3 @@
-const mongoose = require('mongoose');
-process.loadEnvFile(path);
-
-mongoose.connect(process.env.MONGO_URL);
-
 const userSchema = mongoose.Schema({
     fullname: String,
     email: String,
